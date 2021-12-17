@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="LiveChatApp.Views.ServerPage">
+
+
+    <StackLayout Grid.Row="2" BackgroundColor="Navy" VerticalOptions="Center">
+        <Frame BorderColor="Black" Padding="2" Margin="30">
+            <Editor Margin="10" Text="{Binding Message}" Placeholder="Enter Server message" TextColor="Black"/>
+        </Frame>
+        <Button Margin="10" Text="Send" Command="{Binding SendCommand}" />
+    </StackLayout>
+
+</ContentPage>

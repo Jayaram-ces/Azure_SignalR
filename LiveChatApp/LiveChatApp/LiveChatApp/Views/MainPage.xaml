@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LiveChatApp.Views.MainPage"
+             Title="{Binding Title}"
+             BackgroundColor="IndianRed"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout Padding="10" Spacing="50">
+        <Label Margin="25" Text="Welcome to live chatrooms!" TextTransform="Uppercase" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold" TextColor="White" />
+        
+        <Grid VerticalOptions="Center">
+            <StackLayout Padding="20" Spacing="20">
+                <Label TextColor="White" Text="Username" FontSize="Medium" />
+                <Frame BorderColor="Black" Padding="2">
+                    <Entry Text="{Binding Name}" Placeholder="Enter your name" TextColor="Black" />
+                </Frame>
+                
+                <Button Text="Connect to chatroom" Background="White" TextColor="Black" FontAttributes="Bold" Command="{Binding StartLiveChatCommand}" />
+
+                <Button Text="GoTo server page" Background="Green" TextColor="Black" FontAttributes="Bold" Command="{Binding ServerCommand}" />
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
