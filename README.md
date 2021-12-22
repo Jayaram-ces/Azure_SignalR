@@ -18,6 +18,7 @@ Important points to do when working with signalR
 
 4) Publish the app to the azure portal to use serverless configuration.
 5) Main point : Update or Add Configuration in Function app in azure port after publish.
+6)  
 
 Key : AzureSignalRConnectionString
 
